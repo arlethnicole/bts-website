@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - BTS</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: auto 1fr auto;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            grid-column: 1 / 4;
+            background-color: #d8bfd8;
+            color: #4b0082;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 2em;
+        }
+
+        header .logo {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #4b0082;
+            font-size: 1em;
+        }
+
+        aside {
+            background-color: #dda0dd;
+            color: #4b0082;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        aside img.sidebar-image {
+            width: 100px;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .sidebar-left {
+            gnrid-row: 2;
+            grid-column: 1;
+        }
+
+        .sidebar-right {
+            grid-row: 2;
+            grid-column: 3;
+        }
+
+        main {
+            grid-row: 2;
+            grid-column: 2;
+            background-color: #e6e6fa;
+            color: #4b0082;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1.5em;
+        }
+
+        footer {
+            grid-column: 1 / 4;
+            background-color: #d8bfd8;
+            color: #4b0082;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png"    alt="Tienda BTS" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar-left">
+        <img src="bts1.jpg" alt="BTS" class="sidebar-image">
+        <img src="bts2.jpg" alt="BTS" class="sidebar-image">
+    </aside>
+    <main>
+        <h1>Sobre BTS</h1>
+        <p>BTS, también conocido como Bangtan Boys, es una banda surcoreana formada por Big Hit Entertainment. El grupo está compuesto por siete miembros: RM, Jin, Suga, J-Hope, Jimin, V y Jungkook.</p>
+    </main>
+    <aside class="sidebar-right">
+        <img src="bts3.jpg" alt="BTS" class="sidebar-image">
+        <img src="bts4.jpg" alt="BTS" class="sidebar-image">
+    </aside>
+    <footer>
+        <p>Contacto: contacto@example.com</p>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
